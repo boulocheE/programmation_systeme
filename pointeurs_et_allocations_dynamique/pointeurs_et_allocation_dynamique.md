@@ -7,7 +7,6 @@
 **IUT Le Havre - Programmation Système**
 
 # **Pointeurs et allocation dynamique**
-##
 ### Compte-rendu du TP 1 : langage C
 
 # Signification des déclarations :
