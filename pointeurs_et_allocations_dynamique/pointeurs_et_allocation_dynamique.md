@@ -13,8 +13,8 @@
 
 `Exercice 1`
 
-|    Déclaration   |   Signification   |
-|        :-:       |       ---         |
+| Déclaration | Signification |
+|:-:|---|
 |     `int *p;`     | le pointeur `p` stocke l'adresse d'un int                                |
 |   `int *a, b;`    | le pointeur `a` stocke l'adresse d'un int, et `b` est un entier          |
 |   `int *p[10];`   | le pointeur `p` est un tableau qui stocke l'adresse de 10 entiers        |
@@ -24,7 +24,7 @@
 | `int (*p)(char a)`| le pointeur `p` stocke l'adresse d'une fonction qui prend en pramètre un caractère et qui renvoie un entier |
 
 
-# Programme avec l'utilisation de pointeurs
+# Programmes avec l'utilisation de pointeurs
 
 ## **SECTION 1 : Utilisation des pointeurs**
 ### **a. Programme :**
@@ -88,10 +88,6 @@ a = 10		b = 5
 
 ### **a. Programme :**
 ```c
-/*--------------------------------------------------------*
-*                    Allocation mémoire                   *
-*  Disposition des différentes variables d'un programme   *
-*---------------------------------------------------------*/
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -148,3 +144,41 @@ Ainsi, nous pouvons obtenir le résultat suivant :
 - les variables `a` et `b` sont stockées au même endroit *car elles sont déclarées au début du programme*
 - les variables `c` et `d` sont stockées au même endroit *car ce sont les paramètres de la fonction fonc*
 - la variable `e` et le pointeur `p` sont stockés au même endroit *car p pointe l'adresse de e*
+
+
+## **SECTION 3 : Occupation mémoire**  
+`Exercice 4`  
+### **a. Programme :**
+```c
+#include <stdio.h>
+#include <string.h>
+int main(){
+	char chaine[]="abcd";
+	char c='a';
+	printf("Taille de \"a\"       :\t%lu\n", sizeof("a")   );
+	printf("Taille de char        :\t%lu\n", sizeof(char)  );
+	printf("Taille de int         :\t%lu\n", sizeof(int)   );
+	printf("Taille de short       :\t%lu\n", sizeof(short) );
+	printf("Taille de long        :\t%lu\n", sizeof(long)  );
+	printf("Taille de float       :\t%lu\n", sizeof(float) );
+	printf("Taille de double      :\t%lu\n", sizeof(double));
+	printf("Taille de 1           :\t%lu\n", sizeof(1)     );
+	printf("Taille de 'a'         :\t%lu\n", sizeof('a')   );
+	printf("Taille de c           :\t%lu\n", sizeof(c)     );
+	printf("Taille de '\\n'       :\t%lu\n", sizeof('\n')  );
+	printf("Taille de chaine      :\t%lu\n", sizeof(chaine));
+	printf("Longueur de la chaine :\t%lu\n", strlen(chaine));
+	return 0;
+}
+```
+
+### **b. Interprétation de ce programme**
+Les différentes tailles : :
+|Type|Taille|
+|:-:|---|
+|   char ||
+|    int ||
+|  short ||
+|   long ||
+|  float ||
+| double ||
