@@ -122,7 +122,9 @@ int main(){
 ```
 
 ### **b. Analyse et résultat du programme**
-***Malloc :*** 
+- **Malloc**  
+Autorise l'accès à une cause mémoire de l'ordinateur. Ainsi, on peut ajouter ou supprimer une ou plusieurs valeurs enregistrées. Donc, nous avons l'adresse générique qu'il contient, et les autres valeurs qui lui ont été ajoutées.  
+Si nous avons plusieurs valeurs enregistrées, nous pouvons y accéder comme un tableau.
 
 - **Adresses mémoires** des différentes variables et pointeurs :  
 ```text
@@ -143,3 +145,6 @@ L'adresse de fonc :     0x55eff23ae189
 A l'aide de l'adresse mémoire des variables et pointeurs, nous pouvons définir leur emplacement dans la mémoire.
 Ainsi, nous pouvons obtenir le résultat suivant : 
 
+- les variables `a` et `b` sont stockées au même endroit *car elles sont déclarées au début du programme*
+- les variables `c` et `d` sont stockées au même endroit *car ce sont les paramètres de la fonction fonc*
+- la variable `e` et le pointeur `p` sont stockés au même endroit *car p pointe l'adresse de e*
