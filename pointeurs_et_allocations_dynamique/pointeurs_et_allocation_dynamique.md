@@ -147,7 +147,9 @@ Ainsi, nous pouvons obtenir le résultat suivant :
 
 
 ## **SECTION 3 : Occupation mémoire**  
+
 `Exercice 4`  
+
 ### **a. Programme :**
 ```c
 #include <stdio.h>
@@ -173,7 +175,9 @@ int main(){
 ```
 
 ### **b. Interprétation de ce programme**
-Les différentes tailles : :
+
+A l'aide de `sizeof`, nous pouvons connaître la taille d'un type, d'une chaîne de caractère, d'un caractère ou d'un entier...  
+Ainsi, nous pouvons obtenir le tableau suivant :  
 |Type|Taille|
 |:-:|---|
 |   char ||
