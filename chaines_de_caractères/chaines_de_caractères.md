@@ -80,3 +80,4 @@ Pour savoir si un caractère est un nombre : **`isdigit`**
 
 boucle sur s de i, tester avec `isdigit`.
 
+## **SECTION 2 : Allocation dynamique**
