@@ -28,6 +28,7 @@ char* construireChaineInverse(char* str)
 	char* tabInverse
 	tabInverse = (char*) malloc(strlen(str)+1);
 
+
 	for ( int cpt = strlen(str); cpt > 0; cpt -- )
 		tabInverse[cpt] = str[strlen(str) - cpt];
 
